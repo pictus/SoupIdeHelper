@@ -4,7 +4,18 @@ Generates `phpstorm.meta.php` file for your IDE.
 Tested with Shopware 5.6
 
 ## Install
-clone repository to `custom/plugins` directory
+
+**The Terminal Way**
+```
+cd custom/plugins
+git clone https://github.com/pictus/SoupIdeHelper.git SoupIdeHelper
+cd ../../
+php bin/console sw:plugin:refresh
+php bin/console sw:plugin:install SoupIdeHelper --activate --clear-cache
+```
+**The Other Way**
+
+clone repository to `custom/plugins` directory, call the directory `SoupIdeHelper`
 install in shopware
 
 ## Run
